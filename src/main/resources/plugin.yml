@@ -1,0 +1,10 @@
+name: ExtraTools
+version: ${project.version}
+author: Sfiguz7
+description: A Slimefun4-Addon aimed at implementing useful tools upfate for KING_SLEIDER in version 1.21.4
+website: https://github.com/Sfiguz7/ExtraTools
+
+main: me.sfiguz7.extratools.ExtraTools
+depend: [Slimefun]
+
+api-version: 1.14
