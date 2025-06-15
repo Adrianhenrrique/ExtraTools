@@ -59,6 +59,7 @@ public class Hammer extends SimpleSlimefunItem<ToolUseHandler> {
             }
             case IRON_ORE:
             case DEEPSLATE_IRON_ORE: {
+<<<<<<< HEAD
                 return SlimefunItems.IRON_DUST.item();
             }
             case GOLD_ORE:
@@ -68,6 +69,17 @@ public class Hammer extends SimpleSlimefunItem<ToolUseHandler> {
             case COPPER_ORE:
             case DEEPSLATE_COPPER_ORE: {
                 return SlimefunItems.COPPER_DUST.item();
+=======
+                return SlimefunItems.IRON_DUST;
+            }
+            case GOLD_ORE:
+            case DEEPSLATE_GOLD_ORE: {
+                return SlimefunItems.GOLD_DUST;
+            }
+            case COPPER_ORE:
+            case DEEPSLATE_COPPER_ORE: {
+                return SlimefunItems.COPPER_DUST;
+>>>>>>> 922c03243132d854aabac1bb2dcaa08e52beef84
             }
             case NETHERRACK: {
                 return new ItemStack(Material.SOUL_SAND);

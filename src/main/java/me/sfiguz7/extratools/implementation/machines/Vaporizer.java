@@ -22,11 +22,19 @@ public class Vaporizer extends AContainer implements RecipeDisplayItem {
 
     public Vaporizer() {
         super(ETItems.extra_tools, ETItems.VAPORIZER, RecipeType.ENHANCED_CRAFTING_TABLE,
+<<<<<<< HEAD
                 new ItemStack[] {new ItemStack(Material.MAGMA_BLOCK), SlimefunItems.ELECTRIC_MOTOR.item(),
                         new ItemStack(Material.MAGMA_BLOCK),
                         SlimefunItems.HEATING_COIL.item(), SlimefunItems.FLUID_PUMP.item(), SlimefunItems.HEATING_COIL.item(),
                         new ItemStack(Material.MAGMA_BLOCK), SlimefunItems.MEDIUM_CAPACITOR.item(),
                         new ItemStack(Material.MAGMA_BLOCK)});
+=======
+            new ItemStack[] {new ItemStack(Material.MAGMA_BLOCK), SlimefunItems.ELECTRIC_MOTOR,
+                new ItemStack(Material.MAGMA_BLOCK),
+                SlimefunItems.HEATING_COIL, SlimefunItems.FLUID_PUMP, SlimefunItems.HEATING_COIL,
+                new ItemStack(Material.MAGMA_BLOCK), SlimefunItems.MEDIUM_CAPACITOR,
+                new ItemStack(Material.MAGMA_BLOCK)});
+>>>>>>> 922c03243132d854aabac1bb2dcaa08e52beef84
 
         addItemHandler(onBreak());
     }
@@ -35,6 +43,7 @@ public class Vaporizer extends AContainer implements RecipeDisplayItem {
     protected void registerDefaultRecipes() {
 
         registerRecipe(8, new ItemStack[] {new ItemStack(Material.WATER_BUCKET)},
+<<<<<<< HEAD
                 new ItemStack[] {new ItemStack(Material.BUCKET),
                         CustomItemStack.create(SlimefunItems.SALT.item(), 4)
                 });
@@ -44,6 +53,17 @@ public class Vaporizer extends AContainer implements RecipeDisplayItem {
                 });
         registerRecipe(3, new ItemStack[] {new ItemStack(Material.MAGMA_BLOCK)},
                 new ItemStack[] {SlimefunItems.SULFATE.item()});
+=======
+            new ItemStack[] {new ItemStack(Material.BUCKET),
+                new CustomItemStack(SlimefunItems.SALT, 4)
+            });
+        registerRecipe(8, new ItemStack[] {new ItemStack(Material.LAVA_BUCKET)},
+            new ItemStack[] {new ItemStack(Material.BUCKET),
+                new CustomItemStack(SlimefunItems.SULFATE, 16)
+            });
+        registerRecipe(3, new ItemStack[] {new ItemStack(Material.MAGMA_BLOCK)},
+            new ItemStack[] {SlimefunItems.SULFATE});
+>>>>>>> 922c03243132d854aabac1bb2dcaa08e52beef84
 
     }
 
@@ -105,4 +125,9 @@ public class Vaporizer extends AContainer implements RecipeDisplayItem {
         };
     }
 
+<<<<<<< HEAD
 }
+=======
+}
+
+>>>>>>> 922c03243132d854aabac1bb2dcaa08e52beef84

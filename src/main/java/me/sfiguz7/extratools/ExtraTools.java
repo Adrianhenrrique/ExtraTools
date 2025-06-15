@@ -11,11 +11,14 @@ import me.sfiguz7.extratools.implementation.machines.Pulverizer;
 import me.sfiguz7.extratools.implementation.machines.Vaporizer;
 import me.sfiguz7.extratools.implementation.tools.Hammer;
 import me.sfiguz7.extratools.lists.ETItems;
+<<<<<<< HEAD
 // Adicione os imports das novas máquinas:
 import me.sfiguz7.extratools.implementation.machines.BasicDustTransmuter;
 import me.sfiguz7.extratools.implementation.machines.AdvancedDustTransmuter;
 import me.sfiguz7.extratools.implementation.machines.UltimateDustTransmuter;
 
+=======
+>>>>>>> 922c03243132d854aabac1bb2dcaa08e52beef84
 import org.bstats.bukkit.Metrics;
 import org.bukkit.NamespacedKey;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -43,6 +46,7 @@ public class ExtraTools extends JavaPlugin implements SlimefunAddon {
         int bStatsId = 6945;
         new Metrics(this, bStatsId);
 
+<<<<<<< HEAD
         new Hammer().register(this);
         new Research(new NamespacedKey(this, "HAMMER"),
                 ++researchId, "Hammer", 3)
@@ -52,6 +56,18 @@ public class ExtraTools extends JavaPlugin implements SlimefunAddon {
         new Research(new NamespacedKey(this, "GOLD_TRANSMUTER"),
                 ++researchId, "Gold Transmuter", 12)
                 .addItems(ETItems.GOLD_TRANSMUTER.item()).register();
+=======
+
+        new Hammer().register(this);
+        new Research(new NamespacedKey(this, "HAMMER"),
+            ++researchId, "Hammer", 3)
+            .addItems(ETItems.HAMMER).register();
+
+        new GoldTransmuter().register(this);
+        new Research(new NamespacedKey(this, "GOLD_TRANSMUTER"),
+            ++researchId, "Gold Transmuter", 12)
+            .addItems(ETItems.GOLD_TRANSMUTER).register();
+>>>>>>> 922c03243132d854aabac1bb2dcaa08e52beef84
 
         new ElectricComposter(ElectricComposter.Tier.ONE) {
 
@@ -67,8 +83,13 @@ public class ExtraTools extends JavaPlugin implements SlimefunAddon {
 
         }.register(this);
         new Research(new NamespacedKey(this, "ELECTRIC_COMPOSTER"),
+<<<<<<< HEAD
                 ++researchId, "Electric Composter", 18)
                 .addItems(ETItems.ELECTRIC_COMPOSTER.item()).register();
+=======
+            ++researchId, "Electric Composter", 18)
+            .addItems(ETItems.ELECTRIC_COMPOSTER).register();
+>>>>>>> 922c03243132d854aabac1bb2dcaa08e52beef84
 
         new ElectricComposter(ElectricComposter.Tier.TWO) {
 
@@ -84,6 +105,7 @@ public class ExtraTools extends JavaPlugin implements SlimefunAddon {
 
         }.register(this);
         new Research(new NamespacedKey(this, "ELECTRIC_COMPOSTER_2"),
+<<<<<<< HEAD
                 ++researchId, "Electric Composter II", 18)
                 .addItems(ETItems.ELECTRIC_COMPOSTER_2.item()).register();
 
@@ -123,6 +145,30 @@ public class ExtraTools extends JavaPlugin implements SlimefunAddon {
                 ++researchId, "Ultimate Dust Transmuter", 40)
                 .addItems(ETItems.ULTIMATE_DUST_TRANSMUTER.item()).register();
         // =================================================
+=======
+            ++researchId, "Electric Composter II", 18)
+            .addItems(ETItems.ELECTRIC_COMPOSTER_2).register();
+
+        new CobblestoneGenerator().register(this);
+        new Research(new NamespacedKey(this, "COBBLESTONE_GENERATOR"),
+            ++researchId, "Cobblestone Generator", 40)
+            .addItems(ETItems.COBBLESTONE_GENERATOR).register();
+
+        new Vaporizer().register(this);
+        new Research(new NamespacedKey(this, "VAPORIZER"),
+            ++researchId, "Vaporizer", 18)
+            .addItems(ETItems.VAPORIZER).register();
+
+        new ConcreteFactory().register(this);
+        new Research(new NamespacedKey(this, "CONCRETE_FACTORY"),
+            ++researchId, "Concrete Factory", 12)
+            .addItems(ETItems.CONCRETE_FACTORY).register();
+
+        new Pulverizer().register(this);
+        new Research(new NamespacedKey(this, "PULVERIZER"),
+            ++researchId, "Pulverizer", 18)
+            .addItems(ETItems.PULVERIZER).register();
+>>>>>>> 922c03243132d854aabac1bb2dcaa08e52beef84
 
     }
 
@@ -145,4 +191,8 @@ public class ExtraTools extends JavaPlugin implements SlimefunAddon {
         return instance;
     }
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 922c03243132d854aabac1bb2dcaa08e52beef84

@@ -99,14 +99,22 @@
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
+<<<<<<< HEAD
             <version>1.21.4-R0.1-SNAPSHOT</version>
+=======
+            <version>1.18.1-R0.1-SNAPSHOT</version>
+>>>>>>> 922c03243132d854aabac1bb2dcaa08e52beef84
             <scope>provided</scope>
         </dependency>
 
         <dependency>
             <groupId>com.github.TheBusyBiscuit</groupId>
             <artifactId>Slimefun4</artifactId>
+<<<<<<< HEAD
             <version>experimental-5374034c87-1</version>
+=======
+            <version>RC-30</version>
+>>>>>>> 922c03243132d854aabac1bb2dcaa08e52beef84
             <scope>provided</scope>
             <exclusions>
                 <exclusion>

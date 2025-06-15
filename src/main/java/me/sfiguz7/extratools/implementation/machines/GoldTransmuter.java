@@ -21,9 +21,15 @@ public class GoldTransmuter extends AContainer implements RecipeDisplayItem {
 
     public GoldTransmuter() {
         super(ETItems.extra_tools, ETItems.GOLD_TRANSMUTER, RecipeType.ENHANCED_CRAFTING_TABLE,
+<<<<<<< HEAD
             new ItemStack[] {null, SlimefunItems.SILVER_INGOT.item(), null,
                 SlimefunItems.ELECTRIC_MOTOR.item(), SlimefunItems.GOLD_24K_BLOCK.item(), SlimefunItems.ELECTRIC_MOTOR.item(),
                 new ItemStack(Material.GOLDEN_PICKAXE), SlimefunItems.MEDIUM_CAPACITOR.item(),
+=======
+            new ItemStack[] {null, SlimefunItems.SILVER_INGOT, null,
+                SlimefunItems.ELECTRIC_MOTOR, SlimefunItems.GOLD_24K_BLOCK, SlimefunItems.ELECTRIC_MOTOR,
+                new ItemStack(Material.GOLDEN_PICKAXE), SlimefunItems.MEDIUM_CAPACITOR,
+>>>>>>> 922c03243132d854aabac1bb2dcaa08e52beef84
                 new ItemStack(Material.GOLDEN_PICKAXE)});
 
         addItemHandler(onBreak());
@@ -32,6 +38,7 @@ public class GoldTransmuter extends AContainer implements RecipeDisplayItem {
     @Override
     protected void registerDefaultRecipes() {
 
+<<<<<<< HEAD
         registerRecipe(7, new ItemStack[] {SlimefunItems.GOLD_24K_BLOCK.item()},
             new ItemStack[] {new ItemStack(Material.GOLD_BLOCK)});
         registerRecipe(2, new ItemStack[] {SlimefunItems.GOLD_4K.item()},
@@ -58,6 +65,34 @@ public class GoldTransmuter extends AContainer implements RecipeDisplayItem {
             new ItemStack[] {new ItemStack(Material.GOLD_NUGGET, 49)});
         registerRecipe(2, new ItemStack[] {new ItemStack(Material.GOLD_INGOT)},
             new ItemStack[] {SlimefunItems.GOLD_DUST.item()});
+=======
+        registerRecipe(7, new ItemStack[] {SlimefunItems.GOLD_24K_BLOCK},
+            new ItemStack[] {new ItemStack(Material.GOLD_BLOCK)});
+        registerRecipe(2, new ItemStack[] {SlimefunItems.GOLD_4K},
+            new ItemStack[] {new ItemStack(Material.GOLD_NUGGET, 4)});
+        registerRecipe(2, new ItemStack[] {SlimefunItems.GOLD_6K},
+            new ItemStack[] {new ItemStack(Material.GOLD_NUGGET, 9)});
+        registerRecipe(3, new ItemStack[] {SlimefunItems.GOLD_8K},
+            new ItemStack[] {new ItemStack(Material.GOLD_NUGGET, 13)});
+        registerRecipe(3, new ItemStack[] {SlimefunItems.GOLD_10K},
+            new ItemStack[] {new ItemStack(Material.GOLD_NUGGET, 18)});
+        registerRecipe(4, new ItemStack[] {SlimefunItems.GOLD_12K},
+            new ItemStack[] {new ItemStack(Material.GOLD_NUGGET, 22)});
+        registerRecipe(4, new ItemStack[] {SlimefunItems.GOLD_14K},
+            new ItemStack[] {new ItemStack(Material.GOLD_NUGGET, 27)});
+        registerRecipe(5, new ItemStack[] {SlimefunItems.GOLD_16K},
+            new ItemStack[] {new ItemStack(Material.GOLD_NUGGET, 31)});
+        registerRecipe(5, new ItemStack[] {SlimefunItems.GOLD_18K},
+            new ItemStack[] {new ItemStack(Material.GOLD_NUGGET, 36)});
+        registerRecipe(6, new ItemStack[] {SlimefunItems.GOLD_20K},
+            new ItemStack[] {new ItemStack(Material.GOLD_NUGGET, 40)});
+        registerRecipe(6, new ItemStack[] {SlimefunItems.GOLD_22K},
+            new ItemStack[] {new ItemStack(Material.GOLD_NUGGET, 45)});
+        registerRecipe(7, new ItemStack[] {SlimefunItems.GOLD_24K},
+            new ItemStack[] {new ItemStack(Material.GOLD_NUGGET, 49)});
+        registerRecipe(2, new ItemStack[] {new ItemStack(Material.GOLD_INGOT)},
+            new ItemStack[] {SlimefunItems.GOLD_DUST});
+>>>>>>> 922c03243132d854aabac1bb2dcaa08e52beef84
     }
 
     @Override

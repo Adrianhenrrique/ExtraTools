@@ -21,11 +21,19 @@ public class ConcreteFactory extends AContainer implements RecipeDisplayItem {
 
     public ConcreteFactory() {
         super(ETItems.extra_tools, ETItems.CONCRETE_FACTORY, RecipeType.ENHANCED_CRAFTING_TABLE,
+<<<<<<< HEAD
             new ItemStack[] {new ItemStack(Material.WATER_BUCKET), SlimefunItems.GILDED_IRON.item(),
                 new ItemStack(Material.WATER_BUCKET),
                 SlimefunItems.ADVANCED_CIRCUIT_BOARD.item(), SlimefunItems.ELECTRIC_MOTOR.item(),
                 SlimefunItems.ADVANCED_CIRCUIT_BOARD.item(),
                 new ItemStack(Material.WATER_BUCKET), SlimefunItems.SMALL_CAPACITOR.item(),
+=======
+            new ItemStack[] {new ItemStack(Material.WATER_BUCKET), SlimefunItems.GILDED_IRON,
+                new ItemStack(Material.WATER_BUCKET),
+                SlimefunItems.ADVANCED_CIRCUIT_BOARD, SlimefunItems.ELECTRIC_MOTOR,
+                SlimefunItems.ADVANCED_CIRCUIT_BOARD,
+                new ItemStack(Material.WATER_BUCKET), SlimefunItems.SMALL_CAPACITOR,
+>>>>>>> 922c03243132d854aabac1bb2dcaa08e52beef84
                 new ItemStack(Material.WATER_BUCKET)});
 
         addItemHandler(onBreak());
